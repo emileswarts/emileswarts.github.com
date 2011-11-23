@@ -12,6 +12,9 @@ My mostly used Mutt commands
 	k -  up
 	
 	* &#8211; go to last message
+		--remapped in .vimrc with 
+
+			<pre>bind index J    	last-entry</pre>
 	= &#8211; go to first message
 	5 &#8211; go to message with index of number 5
 	&lt;return&gt; display message
