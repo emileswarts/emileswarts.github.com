@@ -1,5 +1,5 @@
 * {padding:0; margin:0;}
-html { display:block; height:100%; width:100%; }
+html { display:block; height:100%; width:100%;  }
 body {  font-family:Verdana, Geneva, sans-serif; font-size:0.88em;}
 #wrap { width:960px; margin:auto; min-height:900px; margin-bottom:100px;}
 #topbar {height:18px;}
