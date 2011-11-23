@@ -7,7 +7,7 @@ body {  font-family:Verdana, Geneva, sans-serif; font-size:0.88em;}
 #header {height:200px; background:#222326;}
 #topnav {background:#111; height:50px; font-family:Tahoma, Geneva, sans-serif; font-weight:bold;}
 .clear {clear:both;}
-#content {background:#efefef;}
+#content {background:#ffffff;}
 #left {width:650px; float:left; background:#fff;}
 #sidebar {width:300px; float:right; background:#efefef;}
 #left .container, #sidebar .container {padding:10px;}
