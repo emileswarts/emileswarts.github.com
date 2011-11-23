@@ -9,9 +9,8 @@ body {  font-family:Verdana, Geneva, sans-serif; font-size:0.88em;}
 .clear {clear:both;}
 #content {background:#ffffff;}
 #left {width:650px; float:left; background:#fff;}
-#sidebar {width:300px; float:right; background:#efefef;}
 #left .container, #sidebar .container {padding:10px;}
-h1#sitename {font: bold 2.00em 'American Typewriter', Georgia, sans-serif; color:#000; text-shadow:#000 1px 1px 1px; display:block; padding:30px 0 0 0;}
+h1#sitename {font:italic 2.0em Georgia, "Times New Roman", Times, serif; color:#000; text-shadow:#000 1px 1px 1px; display:block; padding:30px 0 0 0;}
 #header ul, #sidebar ul {list-style:none; display:block;}
 #topnav li { display:inline; text-shadow:#000 1px 1px 1px;}
 #topnav li a {display:block; color:#ccc; text-decoration:none; height:35px; float:left; padding:15px 15px 0 15px;}
@@ -23,7 +22,7 @@ h1#sitename {font: bold 2.00em 'American Typewriter', Georgia, sans-serif; color
 #introtext p span {background:#000;}
 #content p {line-height:1.5em; margin-bottom:1.5em;}
 .post {padding-bottom:15px; margin-bottom:15px; border-bottom:solid 3px #ccc;}
-.post h2 {display:block; font: bold 1.8em 'American Typewriter', Georgia, sans-serif; color:#306; margin-bottom:15px;}
+.post h2 {display:block; font: bold 1.8em 'American Typewriter', Georgia, sans-serif; color:#222222; margin-bottom:15px;}
 .postcontent {margin-left:110px;}
 .postheader {width:100px; float:left;}
 .postheader .postinfo {font-size:0.80em!important; width:90px; padding:5px; display:block;}
