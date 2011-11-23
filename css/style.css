@@ -12,7 +12,7 @@ body { background:url(images/bodybg.jpg) repeat-x; font-family:Verdana, Geneva, 
 #left {width:650px; float:left; background:#fff;}
 #sidebar {width:300px; float:right; background:#efefef;}
 #left .container, #sidebar .container {padding:10px;}
-h1#sitename {font: bold 2.00em 'American Typewriter', Georgia, sans-serif; color:#fff; text-shadow:#000 1px 1px 1px; display:block; padding:30px 0 0 0;}
+h1#sitename {font: bold 2.00em 'American Typewriter', Georgia, sans-serif; color:#000; text-shadow:#000 1px 1px 1px; display:block; padding:30px 0 0 0;}
 #header ul, #sidebar ul {list-style:none; display:block;}
 #topnav li { display:inline; text-shadow:#000 1px 1px 1px;}
 #topnav li a {display:block; color:#ccc; text-decoration:none; height:35px; float:left; padding:15px 15px 0 15px;}
