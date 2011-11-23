@@ -16,4 +16,4 @@ To use letter hints instead of numbers, add the plugin found on the url below in
 http://coderepos.org/share/browser/lang/javascript/vimperator-plugins/trunk/char-hints-mod2.js
 
 Then add the following line to your .vimperatorrc file
-let g:hintsio="iO"
+let g:hintsio=&#39;iO&#39;

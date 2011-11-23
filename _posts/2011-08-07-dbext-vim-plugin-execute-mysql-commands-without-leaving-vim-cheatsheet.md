@@ -18,37 +18,33 @@ My leader key has been set to ,
 
 Shortcuts
 
-<pre>
-<p>
 Show buffer parameters.  Prompt for configuration for you database connection
-<strong>,sbp </strong>
+<pre>,sbp </pre>
+
 Same as
-<strong>: DBPromptForBufferParameters</strong>
-</p>
-<p>
+<pre>: DBPromptForBufferParameters</pre>
+
+
 Execute a command on a line that your cursor is on
 <em>Create a file with your most used commands</em>
-<strong>,sel</strong> - mnemonic for: s(sql)e(execute)l(line)
-</p>
-<p>
+<pre>,sel - mnemonic for: s(sql)e(execute)l(line)</pre>
+
+
 Execute visually selected text
-<strong>,se</strong> - mnemonic for: s(sql)e(execute)
-</p>
-<p>
+<pre>,se - mnemonic for: s(sql)e(execute)</pre>
+
+
 This will select * from prompted table
-<strong>,sta</strong>  - mnemonic for: s(sql) t(table) a(ask name) 
-</p>
-<p>
+<pre>,sta  - mnemonic for: s(sql) t(table) a(ask name) </pre>
+
+
 Describe table with visually selected table-name
-<strong>,sdt</strong> - mnemonic for: s(sql)d(describe)t(table)
-</p>
-<p>
+<pre>,sdt - mnemonic for: s(sql)d(describe)t(table)</pre>
+
+
 Show history (can execute commands from this buffer)
-<strong>,sh</strong> - mnemonic for: s(sql)h(history)
-</p>
-<p>
+<pre>,sh - mnemonic for: s(sql)h(history)</pre>
+
 Change options (I use this mostly to switch databses)
-<strong> :DBSetOption user|passwd|dsnname|srvname|dbname|host|port|...=<value> </strong>
-</p>
-</pre>
+<pre>:DBSetOption user|passwd|dsnname|srvname|dbname|host|port|...=<value></pre>
 
