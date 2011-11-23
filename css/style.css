@@ -78,8 +78,9 @@ blockquote {display:block; width:230px; float:right; font:18px "Trebuchet MS", A
 blockquote p {margin-bottom:10px!important; color:#000!important;}
 
 #sidenav {
-	padding:20px;
-    width: 300px;
+	padding-top:20px;
+	padding-left:20px;
+    width: 270px;
     position: fixed; /*--Fix the sidenav to stay in one spot--*/
     float: left; /*--Keeps sidenav into place when Fixed positioning fails--*/
 	background:#555;
