@@ -5,12 +5,15 @@ title: 'Quick PHP error logging'
 ---
 
 Firstly create your file that will record the errors:
-<pre>touch error_reporting.txt
-</pre>
+
+<pre>touch error_reporting.txt</pre>
+<br />
+
 Make file writeable
 <pre> sudo chmod 755 error_log.txt</pre>
 
 Include this in the header of your php file
+
 <pre>
 error_reporting(E_ALL ^ E_NOTICE);
 ini_set('display_errors', FALSE);

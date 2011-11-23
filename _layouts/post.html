@@ -2,9 +2,12 @@
 layout: layout
 ---
 
-<div class="content">
-  <div id="post">
-    <h1>{{ post.title }}</h1>
-    {{ content }}
-  </div>
+<div class="post">
+	<div class="postcontent">
+		<h1>{{ post.title }}</h1>
+		<div style="margin-top:80px">
+			{{ content }}
+		</div>
+	</div>
+	<a href="/index.html">< back </a>
 </div>

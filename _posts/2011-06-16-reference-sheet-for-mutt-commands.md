@@ -1,20 +1,19 @@
 ---
 layout: post
-title: 'mutt commands'
+title: 'my most used mutt commands'
 
 ---
 
 
-MUTT
-So I took the plunge and moved over to MUTT.  This will be my reference page for all the new things I learn.
-Some of the features may be customized to suit only my local environment, but I will explain how to set this up.
-Basic navigation
+My mostly used Mutt commands
 
 <pre>
 	j &#8211; down
 	k -  up
 	
 	* &#8211; go to last message
+		--for easier reach, remapped in .muttrc with: bind index J    last-entry
+		<br />
 	= &#8211; go to first message
 	5 &#8211; go to message with index of number 5
 	&lt;return&gt; display message

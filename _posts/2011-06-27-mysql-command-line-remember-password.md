@@ -23,11 +23,9 @@ In the terminal run the following to use the contents of the file for login:
 <pre>mysql --defaults-file="~/mysql_server1.txt" </pre>
 
 then you could even create a bash alias in ~/.bash_aliases
-<pre>
 
-#mysql
-alias mysqlserver1='mysql --defaults-file="~/mysql_server1.txt"'
-</pre>
+<pre>alias mysqlserver1='mysql --defaults-file="~/mysql_server1.txt"' </pre>
+<br />
 
 Now all you need to run at the terminal is: 
 <pre>mysqlserver1 </pre>

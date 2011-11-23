@@ -10,7 +10,7 @@ Problem: Automate accordion on content pulled from a content managed system.  O
 
 I need the following HTML to be generated:
 <pre>
-&lt;div id='accordion'&gt;
+&lt;div id=&#34;accordion&#34;&gt;
 &lt;h2&gt;Title&lt;/h2&gt;
 &lt;div&gt;
 &lt;p&gt;content&lt;/p&gt;
@@ -19,14 +19,13 @@ I need the following HTML to be generated:
 </pre>
 
 preg_replace works is the tool for the job, and this is the code that I used.
-<pre>
+
 Modifiers:
 i - case insensitive
 m - multiline  ~this was what I did not include, and got stuck.
 s - . character matches all characters
 
-$pattern = "/&lt;\/h2&gt;(.*?)&lt;h2 ([^&gt;]*?)&gt;/ism";
-$replace = "&lt;/h2&gt;&lt;div&gt;$1&lt;/div&gt;&lt;h2 $2&gt;";
+$pattern = &#34;/&lt;\/h2&gt;(.*?)&lt;h2 ([^&gt;]*?)&gt;/ism&#34;;
+$replace = &#34;&lt;/h2&gt;&lt;div&gt;$1&lt;/div&gt;&lt;h2 $2&gt;&#34;;
 
 return(preg_replace($pattern, $replace, $content));
-</pre>

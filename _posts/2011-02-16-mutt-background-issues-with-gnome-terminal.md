@@ -10,7 +10,7 @@ Only thing was that it looked so ugly! 50% grey solid background and white text?
 Here is how to solve it, and have a transparent background in Mutt.
 
 Simply put this line in your ~/.bashrc
-<strong><span style="color: #ff6600;">export COLORFGBG="default;default"</span></strong>
+export COLORFGBG=&quot;default;default&quot;
 
-Then refer to the transparent background as "default" in your ~/.muttrc, such as the example below
-<span style="color: #ff6600;"><strong>color normal green 		default</strong></span>
+Then refer to the transparent background as &quot;default&quot; in your ~/.muttrc, such as the example below
+color normal green 		default
