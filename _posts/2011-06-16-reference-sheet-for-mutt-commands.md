@@ -12,8 +12,8 @@ My mostly used Mutt commands
 	k -  up
 	
 	* &#8211; go to last message
-		--remapped in .muttrc with 
-			bind index J    last-entry
+		--for easier reach, remapped in .muttrc with: bind index J    last-entry
+		<br />
 	= &#8211; go to first message
 	5 &#8211; go to message with index of number 5
 	&lt;return&gt; display message
