@@ -82,4 +82,5 @@ blockquote p {margin-bottom:10px!important; color:#000!important;}
     width: 300px;
     position: fixed; /*--Fix the sidenav to stay in one spot--*/
     float: left; /*--Keeps sidenav into place when Fixed positioning fails--*/
+	background:#555;
 }
