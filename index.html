@@ -9,7 +9,7 @@ title: Emile Swarts
       {% for post in site.posts %}
       <li>
 		 <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-		 <span>{{ post.date | date: "%B %e, %Y" }}</span>
+		 <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
       </li>
       {% endfor %}
     </ul>

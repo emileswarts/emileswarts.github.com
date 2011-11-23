@@ -2,27 +2,19 @@
 html { display:block; height:100%; width:100%;  }
 body {  font-family:Verdana, Geneva, sans-serif; font-size:0.88em;}
 #wrap { width:960px; margin:auto; min-height:900px; margin-bottom:100px;}
-#topbar {height:18px;}
-#ribbon {height:102px;}
-#header {height:200px; background:#222326;}
-#topnav {background:#111; height:50px; font-family:Tahoma, Geneva, sans-serif; font-weight:bold;}
 .clear {clear:both;}
 #content {background:#ffffff;}
 #left {width:650px; float:left; background:#fff;}
 #left .container, #sidebar .container {padding:10px;}
-h1#sitename {font:italic 2.0em Georgia, "Times New Roman", Times, serif; color:#000; text-shadow:#000 1px 1px 1px; display:block; padding:30px 0 0 0;}
+h1 {display:block; font: bold 2.0em 'American Typewriter', Georgia, sans-serif; color:#666; margin-bottom:15px;}
+h2 {display:block; font: italic 1.8em 'American Typewriter', Georgia, sans-serif; color:#666; margin-bottom:15px;}
 #header ul, #sidebar ul {list-style:none; display:block;}
-#topnav li { display:inline; text-shadow:#000 1px 1px 1px;}
-#topnav li a {display:block; color:#ccc; text-decoration:none; height:35px; float:left; padding:15px 15px 0 15px;}
-#topnav li a:visited, #topnav li a:active {color:#ccc; text-decoration:none;}
-#topnav li a:hover {color:#fff; background:#000;}
-#topnav li.current a {color:#fff; background:#000;}
 #introtext p {font:italic 1.3em Georgia, "Times New Roman", Times, serif; color:#ccc; display:block; padding:10px 15px 0 15px; width:60%; float:left; line-height:1.4em;}
-#introtext h2 {display:block; padding:10px 15px 0 15px; width:60%; float:left; font:bold italic 1.8em 'American Typewriter', Georgia, sans-serif; color:#fff; text-shadow:#000 1px 1px 1px;}
+#introtext h2 {display:block; padding:10px 15px 0 15px; width:60%; float:left; font:italic 1.8em 'American Typewriter', Georgia, sans-serif; color:#fff; text-shadow:#000 1px 1px 1px;}
 #introtext p span {background:#000;}
 #content p {line-height:1.5em; margin-bottom:1.5em;}
-.post {padding-bottom:15px; margin-bottom:15px; border-bottom:solid 3px #ccc;}
-.post h2 {display:block; font: bold 1.8em 'American Typewriter', Georgia, sans-serif; color:#222222; margin-bottom:15px;}
+.post {padding-bottom:15px; margin-bottom:15px; }
+.post h2 {display:block; font: 1.8em 'American Typewriter', Georgia, sans-serif; color:#222222; margin-bottom:15px;}
 .postcontent {margin-left:110px;}
 .postheader {width:100px; float:left;}
 .postheader .postinfo {font-size:0.80em!important; width:90px; padding:5px; display:block;}
@@ -30,10 +22,7 @@ h1#sitename {font:italic 2.0em Georgia, "Times New Roman", Times, serif; color:#
 a {color:#306; text-decoration:none;}
 a:visited, a:active {color:#306; text-decoration:none;}
 .post a:hover {color:#000; background:#ffc;}
-.postheader .date { width:80px; float:left; background:#ffffcc; padding:3px; margin-bottom:18px;}
-.postheader .date .year {display:block; background:#306; padding:3px; font-size:0.8em; font-weight:bold; color:#fff; text-align:center;}
-.postheader .date .day {display:block; text-align:center; padding:3px; font: bold 3.00em 'American Typewriter', Georgia, sans-serif;}
-.postheader .date .month {display:block; font-size:0.75em; background:#000; color:#fff; text-align:center; padding:3px;}
+.date{color:#777}
 
 .shadow {
 -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,.3);
@@ -64,10 +53,6 @@ box-shadow: 1px 1px 5px rgba(0,0,0,.3);
 .alignleft {float:left;}
 .alignright {float:right;}
 
-
-
-
-
 .formcontainer {padding:20px 20px 10px 0;}
 .formcontainer form {padding:0 15px 0 35px;}
 .formcontainer .field {padding:5px;}
@@ -82,7 +67,8 @@ textarea.txt {border: solid 1px #ccc; width:230px; padding:2px;}
 img.alignleft {margin-right:10px;}
 img.alignright {margin-left:10px;}
 .post ul {list-style:none; margin-bottom:18px;}
-.post ul li { display:block; padding:3px 10px 3px 20px; border-bottom:dashed 1px #cacaca;}
+
+.post ul li { display:block; padding:40px 10px 3px 20px; }
 .post ol {
 	padding-left:30px;
 	
@@ -90,3 +76,10 @@ img.alignright {margin-left:10px;}
 .post ol li { padding:3px 10px 3px 0; }
 blockquote {display:block; width:230px; float:right; font:18px "Trebuchet MS", Arial, Helvetica, sans-serif; margin-left:15px; border-bottom: solid 1px #ccc; border-top: solid 1px #ccc; padding:10px;}
 blockquote p {margin-bottom:10px!important; color:#000!important;}
+
+#sidenav {
+	padding:20px;
+    width: 300px;
+    position: fixed; /*--Fix the sidenav to stay in one spot--*/
+    float: left; /*--Keeps sidenav into place when Fixed positioning fails--*/
+}
