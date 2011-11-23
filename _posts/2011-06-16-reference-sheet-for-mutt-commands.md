@@ -1,13 +1,11 @@
 ---
 layout: post
-title: 'mutt commands'
+title: 'my most used mutt commands'
 
 ---
 
 
-So I took the plunge and moved over to MUTT.  This will be my reference page for all the new things I learn.
-Some of the features may be customized to suit only my local environment, but I will explain how to set this up.
-Basic navigation
+My mostly used Mutt commands
 
 <pre>
 	j &#8211; down
