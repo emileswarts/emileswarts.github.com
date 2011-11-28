@@ -70,3 +70,6 @@ Go home!
 
 monitor mysql processes
 <pre>watch -n 1 mysqladmin --user=user --password=password processlist</pre>
+
+change file permissions like other file 
+<pre>chmod --reference file.txt otherfile.txt</pre>
