@@ -8,7 +8,7 @@ I recently purchased the Happy Hacking keyboard Professional II which convenient
 
 While this is great, on my other keyboard (being a VIM user) I had remapped Caps lock to be Esc which I got quite used to, and was especially convenient on the vi-mode command line for bash.  
 
-By default on the happy hacking keyboard the escape key is pressed through a combination of <cntrl>[ which is akward to press in my opinion.
+By default on the happy hacking keyboard the escape key is pressed through a combination of &#60;cntrl&#62;&#91; which is akward to press in my opinion.;
 
 I also got used to having the control key where caps lock used to be.
 
