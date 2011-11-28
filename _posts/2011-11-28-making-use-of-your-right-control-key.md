@@ -14,5 +14,7 @@ I also got used to having the control key where caps lock used to be.
 
 I decided to remap the right modifier key (next to the spacebar) to be esc, as this is a key that I never use and it is more conveniently placed and only requires the right thumb than the pinky combination.
 
-The keycode for the right modifier key is 134, so we will type the following on the command line.
-<pre>xmodmap -e "keycode 134 = Escape"</pre> 
+The keycode for the right modifier key is 134, so we will add the following to our ~/.Xmodmap.
+
+If it does not exist, create it.
+ <pre> keycode 134 = Escape</pre>
