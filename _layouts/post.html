@@ -4,9 +4,11 @@ layout: layout
 
 <div class="post">
 	<div class="postcontent">
-		<h1>{{ post.title }}</h1>
 		<div style="margin-top:80px">
+		<h1>{{ page.title }}</h1>
 			{{ content }}
+		<br />
+		<em style="color:#ccc">{{ page.date | date: "%B %e, %Y" }}</em>
 		</div>
 	</div>
 	<a href="/index.html">< back </a>
