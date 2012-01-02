@@ -75,5 +75,5 @@ change file permissions like other file
 <pre>chmod --reference file.txt otherfile.txt</pre>
 
 find ips in history
-history 10000 |egrep '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+<pre>history 10000 |egrep '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'</pre>
 
