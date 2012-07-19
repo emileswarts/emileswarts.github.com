@@ -7,7 +7,7 @@ title: 'Benchmarking with apache2-utils'
 
 Get apache2-utils
 <pre>
-sudo apt get-install apache2-utils
+sudo pacman -Syu apache2-utils
 </pre>
 
 Run benchmark test, dont forget the trailing slash
