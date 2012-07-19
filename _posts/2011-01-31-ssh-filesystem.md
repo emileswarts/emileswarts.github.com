@@ -4,10 +4,10 @@ title: 'SSH Filesystem'
 
 ---
 
-sshfs allows you to mount your remote server as a local drive.
+sshfs allows you to mount your remote server as a local drive using fuse.
 
-Install
-<pre>sudo apt-get install sshfs</pre>
+Install fuse
+<pre>pacman -S sshfs</pre>
 
 Configure
 <pre>http://fuse.sourceforge.net/sshfs.html</pre>
