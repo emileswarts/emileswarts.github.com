@@ -41,7 +41,7 @@ vi mode (set -o vi).  Same obviously goes for vim, and any other vi like applica
 
 So the control key was never fully utilized or even remapped.  It remained in its awkward position at the bottom of my keyboard.
 
-I realized that ctrl chording would not be as bad if it was placed on the caps lock key.  I could just use the default "ctrl [" escape key which should be available as a default.
+I realized that ctrl chording would not be as bad if it was placed on the caps lock key.  I could just use the default 'ctrl \[' escape key which should be available as a default.
 
 Also considering that Esc has 1 function and ctrl can have copious amounts of combinations.  It seems illogical to have it mapped the way I did.
 

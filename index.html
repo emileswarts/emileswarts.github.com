@@ -4,14 +4,15 @@ title: Emile Swarts
 ---
 
 <div class="content">
-  <div class="related">
-    <ul>
-      {% for post in site.posts %}
-      <li>
-		 <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-		 <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+	<div class="related">
+		<ul>
+			{% for post in site.posts %}
+			<li>
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+			{{ post.description }}
+			<span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
