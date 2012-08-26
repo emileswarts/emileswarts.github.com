@@ -67,7 +67,7 @@ display:block;  color:#222222; margin-bottom:15px;
 }
 .postcontent 
 {
-margin-left:110px;
+margin-left:50px;
 }
 .postheader 
 {
@@ -83,11 +83,11 @@ display:block;
 }
 a 
 {
-color:#306; text-decoration:none;
+color:#999 !important; text-decoration:none;
 }
 a:visited, a:active 
 {
-color:#306; text-decoration:none;
+color:#999 !important; text-decoration:none;
 }
 .post a:hover 
 {
@@ -285,7 +285,7 @@ margin-bottom:10px!important; color:#000!important;
 
 	padding-top:20px;
 	padding-left:20px;
-    width: 270px;
+    width: 220px !important;
     position: fixed; /*--Fix the sidenav to stay in one spot--*/
     float: left; /*--Keeps sidenav into place when Fixed positioning fails--*/
 
