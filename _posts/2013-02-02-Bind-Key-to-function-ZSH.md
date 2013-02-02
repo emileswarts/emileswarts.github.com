@@ -31,4 +31,5 @@ create the file and add the following code to it.
 	bindkey "^e" ls_wrap
 </pre>
 
+
 Reload ZSH and by pressing Control e, it will execute pwd, and ls -al.
