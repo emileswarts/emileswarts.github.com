@@ -17,9 +17,6 @@ In your custom directory in your oh-my-zsh setup (usually ~/.oh-my-zsh/custom/),
 create the file and add the following code to it.  The echo is just to create a new line for reset prompt.
 
 <pre>
-
-	autoload -U read-from-minibuffer
-
 	ls_wrap () {
 		ls -al
 		echo
