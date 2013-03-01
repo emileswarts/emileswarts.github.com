@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Mysql cheatsheet</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="sidenav">
+			<h1><a href="/">emileswarts.me</a></h1>
+			<p>Mastering unix</p>
+		</div>
+		<div id="wrap">
+			<div id="content">
+				<div class="container">
+					<div class="post">
+						<div class="postcontent">
+							<div class="post">
+	<div class="postcontent">
+		<div style="margin-top:80px">
+		<h1>Mysql cheatsheet</h1>
+			<p>databases //show all databases Add column to table <pre>ALTER table mytable ADD (columnname1 varchar(255) NOT NULL, columnname2 enum(&#39;Y&#39;,&#39;N&#39;) DEFAULT &#39;N&#39; NOT NULL);</pre></p>
+
+<p>Create table with primary key <pre>create table webuser_no_auto_approve(id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, domain VARCHAR(255) NOT NULL) engine=innodb default charset=utf8 collate=utf8_unicode_ci;</pre></p>
+<br />
+<p>check database size <pre>SELECT  CONCAT(sum(ROUND(((DATA_LENGTH + INDEX_LENGTH &#8211; DATA_FREE) / 1024 / 1024),2)),&#34; MB&#34;) AS Size FROM
+INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA like &#39;%your_db%&#39;;
+</pre></p>
+<br />
+<p>export database, or table <pre>mysqldump -u user -h localhost -p databasename tablename &gt; ~/database_or_table.sql </pre></p>
+<br />
+<p>import database, or table <pre>mysql -u user -h localhost -p databasename  &lt; database.sql </pre></p>
+<br />
+<p>create empty table structure from other database/table <pre>create table mytable like database.othertable </pre></p>
+<br />
+<p>insert data from different database/table //fields have to match <pre>insert into newdb select * from otherdb.olddb </pre></p>
+<br />
+<p>show character encoding for table <pre>show create table whatever </pre></p>
+<br />
+<p>create the user, and grant some priviledges on specific db. use &#39;.&#39; for all <pre>grant select, insert update, delete on newdatabase to &#39;newuser&#39; identified by &#39;pass&#39;; </pre></p>
+<br />
+<p>Show last modification date <pre>SELECT UPDATE_TIME FROM information_schema.tables WHERE TABLE_SCHEMA = &#39;somedb&#39;
+AND TABLE_NAME = &#39;sometable&#39;;</pre></p>
+<br />
+<p>Duplicate a row <pre>insert into new table select NULL, col1, col2 from newtable; </pre></p>
+<br />
+<p>//null represents id pk. columns need to match To copy a column into the same table, first create the column to reflect the one you want to copy. Then <pre>update table set newcolumn = oldcolumn </pre></p>
+<br />
+<p>Rename a column <pre>alter table resources change enddatenew enddate datetime; </pre></p>
+<br />
+<p>Rename a table <pre>alter table events rename to events_backup;</pre></p>
+<br />
+<p>Fulltext search <pre>alter table resources add FULLTEXT(description, short_description, title); </pre></p>
+<br />
+<p>Insert into table only if it is not there yet <br /> <pre>insert ignore into table(title) values(&quot;test&quot;); </pre></p>
+<br /><pre>update albums as a, artists as b SET a.rating=b.rating where a.artist_id=b.id; </pre><br />
+<p>Update a column of a table based on another one <br /> <pre>insert ignore into table(title) values(&quot;test&quot;); </pre></p>
+<br />
+<p>User Privileges</p>
+
+<p>Check all users privileges <pre>SELECT User from mysql.user;</pre></p>
+
+<p>Show privileges for user <pre>SHOW GRANTS FOR 'user'@'localhost'; </pre></p>
+
+<p>Grant privileges <pre>GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES ON database.* TO username@localhost IDENTIFIED BY 'password';</pre></p>
+
+<p>Load CSV file <pre>LOAD DATA LOCAL INFILE '/home/emile/Documents/bio.csv' INTO TABLE events FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (event_record_id, event_code, date, title, location, event_status, type);</pre></p>
+
+<p>Convert table to utf-8. Be careful <pre>ALTER TABLE tbl_name CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci; </pre></p>
+		<br />
+		<em style="color:#ccc">June 16, 2011</em>
+		</div>
+	</div>
+	<a href="/index.html">< back </a>
+</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27239148-1']);
+			_gaq.push(['_setDomainName', 'github.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+
+</script>
+	 </body>
+ </html>

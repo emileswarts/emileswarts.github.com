@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>VIM cheatsheet</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="sidenav">
+			<h1><a href="/">emileswarts.me</a></h1>
+			<p>Mastering unix</p>
+		</div>
+		<div id="wrap">
+			<div id="content">
+				<div class="container">
+					<div class="post">
+						<div class="postcontent">
+							<div class="post">
+	<div class="postcontent">
+		<div style="margin-top:80px">
+		<h1>VIM cheatsheet</h1>
+			<h2 id='common_vim_commands'>Common vim commands</h2>
+
+<pre><code>			&quot;+y, &quot;*y             //yank to system clipboard depending what os you are on
+			
+			&quot;_y                  //yank into black hole
+			
+			ma                   //mark a
+			
+			&#39;a                   //go to mark a
+			
+			/something           //search forwards for something, press n for next
+			
+			?something           //search backwards for something, press n for next
+			
+			/something\|other    //search forwards for something, OR other
+			
+			/something\&amp;other    //search forwards for something, AND other
+			
+			/\/                  //search forwards Wordboundary.  Wont match johna..
+			
+			\v                   //find exactly four numbers like 1234. Very magic mode
+			
+			gf                  //open filename under cursor
+			
+			g;                   //previous position of edit
+			
+			g,                   //next position of exit
+			
+			W                    //next word by whitespace, not .,
+			
+			H                    //head (top)
+			
+			M                    //middle of file
+			
+			vmotion              //select letter under cursor plus motion
+			
+			V                    //Visual line mode
+			
+			gv                   //reselect last selected text
+			
+			,z                   //highlight clolumn and line mapped in ~/.vimrc with nnoremap ,z set cursorline! cursorcolumn!
+			
+			[s                   //go to next spelling mistake
+			
+			z=                   //Spelling correction list long
+			
+			1z=                  //Spelling correction select first suggestion
+			
+			zg                   //Add word to whitelist
+			
+			jj                   //escape insert mode. mapped in .vimrc with: inoremap jj 
+			
+			g/^/.t               //duplicate every line in file --wow
+			
+			g/^error/ . w &gt;&gt;     ~/home/errors.txt //match output to separate file
+			
+			y:&quot;                  //pull visuall selected text into commandline.  is control key R
+			
+			cs&quot;&#39;                 //change surrounding from double quote to single
+			
+			ds&quot;&#39;                 //delete surrounding
+			
+			dst                  //delete surrounding tag
+			
+			yy                   //yank line
+			
+			p                    //put (paste)
+			
+			2&quot;p                  //put second selected item
+			
+			ysW(                 //surround word with ( -
+			
+			vs(                  //surround visual selection with ( -
+			
+			gm                   //go to middle of line horizontally
+			
+			g*                   //partial match of word
+			
+			&#39;&quot;                   //go to last edit position
+			
+			gp                   // put but leave cursor under 
+			
+			R                    // Replace mode 
+			
+			ctrl e               // scroll down
+			
+			z                    //Carriage return = put current line at the top of the screen
+			
+			z. =                 //put current line in the middle of the screen
+			
+			z- =                 //put current line at the bottom of the screen
+			
+			Ctrl E               //insert character from below the cursor
+			
+			Ctrl Y               //Insert character from above the cursor
+			
+			Ctrl R               //Insert last insert mode text 
+			
+			Ctrl X               //Complete the word before the cursor / modes
+			
+			Ctrl H               //Remove character to the left
+			
+			o                    //in visual mode changes cursor position vertically
+			
+			use b instead of ()
+			
+			use inner sentence/ inner paragraph ffs
+			
+			You can have abbreviations for the commnad line
+			
+			Ctrl N               //word completion backwards
+			
+			set cpt=.,w,b,u,t,i // set the options for auto complete
+			
+			ga                   //show ascii character under cursor
+			
+			ve                   //show version and compilation options
+			
+			
+			
+			Commandline
+			
+			:se spell!           //toggle spelling 
+			
+			:se spellang=en_gb   // set your locale for spell checking
+			
+			:set ft?             //check filetype
+			
+			:g/span.*div/        //Display all line numbers for search results
+			
+			:s filename          //split
+			
+			:vsp filename        //vertical split
+			
+			:res -10             //reduce space of split window by 10 lines
+			
+			:+                   //increase split window by 1 line
+			
+			:-                   //reduce split window by 1 line
+			
+			:tabe filename       //file open in new tab
+			
+			:tabc                //tabclose
+			
+			:set number          //display line numbers. mapped with n
+			
+			:set list            //show hidden characters.
+			
+			:set nonumber        //turn off line numbers
+			
+			:tabn                //next tab
+			
+			:cab goo doo
+			
+			:opt                 //shows you some cool interactive help
+			
+			:map to show all your key mappings
+			
+			:dig =               //view digraph  //need to check this
+			
+			:r! command          //insert the output of a command
+			
+			:reg =               //show registers
+			
+			:ce =                //center for visually selected text
+			
+			:marks               //show all current marks
+			
+			:buffers             //show all buffers
+			
+			:ju                  //print jump list
+			
+			:w !sudo tee %       //Save when you forgot to sudo
+			
+			:g/                  ^/exe &quot;.w &quot;.line(&quot;.&quot;).&quot;.txt&quot; //each line of file extracted to file with line number as title
+			
+			:let @a=@/           //copy last search command to register a, or whatever register.
+			
+			:%s=  *$==           // delete end of line blanks
+			
+			:%                   s/^\(.*\)\(\n\1\)\+$/\1/  // delete multiple duplicate lines --
+			
+			:sor                 //Sort file
+			
+			:vmap z :%s/\*\&gt;/     //Pull visually highlighted text into lhs of substitute. --</code></pre>
+		<br />
+		<em style="color:#ccc">June 16, 2011</em>
+		</div>
+	</div>
+	<a href="/index.html">< back </a>
+</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27239148-1']);
+			_gaq.push(['_setDomainName', 'github.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+
+</script>
+	 </body>
+ </html>

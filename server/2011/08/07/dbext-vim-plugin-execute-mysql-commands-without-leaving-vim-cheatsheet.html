@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Dbext VIM plugin - Execute mysql commands without leaving vim - cheatsheet</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="sidenav">
+			<h1><a href="/">emileswarts.me</a></h1>
+			<p>Mastering unix</p>
+		</div>
+		<div id="wrap">
+			<div id="content">
+				<div class="container">
+					<div class="post">
+						<div class="postcontent">
+							<div class="post">
+	<div class="postcontent">
+		<div style="margin-top:80px">
+		<h1>Dbext VIM plugin - Execute mysql commands without leaving vim - cheatsheet</h1>
+			<p>I recently found the Dbext plugin by Peter Bagyinszki, which eliminates the need for me to have to type out manual mysql queries on the command line. It enables you to save a file with commonly used queries, and then run them with a simple shortcut.</p>
+
+<p>I will not go into depth about this plugin, and you can learn more about it by downloading it here:</p>
+<a href='http://www.vim.org/scripts/script.php?script_id=356' target='_blank'>http://www.vim.org/scripts/script.php?script_id=356 </a>
+<p>I would recommend reading the documentation, and doing the quick tutorial that is provided with it.</p>
+
+<p>My leader key has been set to ,</p>
+
+<p>Shortcuts</p>
+
+<p>Show buffer parameters. Prompt for configuration for you database connection <pre>,sbp </pre></p>
+
+<p>Same as <pre>: DBPromptForBufferParameters</pre></p>
+
+<p>Execute a command on a line that your cursor is on <em>Create a file with your most used commands</em> <pre>,sel - mnemonic for: s(sql)e(execute)l(line)</pre></p>
+
+<p>Execute visually selected text <pre>,se - mnemonic for: s(sql)e(execute)</pre></p>
+
+<p>This will select * from prompted table <pre>,sta  - mnemonic for: s(sql) t(table) a(ask name) </pre></p>
+
+<p>Describe table with visually selected table-name <pre>,sdt - mnemonic for: s(sql)d(describe)t(table)</pre></p>
+
+<p>Show history (can execute commands from this buffer) <pre>,sh - mnemonic for: s(sql)h(history)</pre></p>
+
+<p>Change options (I use this mostly to switch databses) &lt;pre&gt;:DBSetOption user|passwd|dsnname|srvname|dbname|host|port|&#8230;=&lt;value&gt;&lt;/pre&gt;</p>
+		<br />
+		<em style="color:#ccc">August  7, 2011</em>
+		</div>
+	</div>
+	<a href="/index.html">< back </a>
+</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27239148-1']);
+			_gaq.push(['_setDomainName', 'github.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+
+</script>
+	 </body>
+ </html>

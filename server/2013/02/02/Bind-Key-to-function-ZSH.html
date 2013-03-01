@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Map a key to a function ZSH and Oh My ZSH</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="sidenav">
+			<h1><a href="/">emileswarts.me</a></h1>
+			<p>Mastering unix</p>
+		</div>
+		<div id="wrap">
+			<div id="content">
+				<div class="container">
+					<div class="post">
+						<div class="postcontent">
+							<div class="post">
+	<div class="postcontent">
+		<div style="margin-top:80px">
+		<h1>Map a key to a function ZSH and Oh My ZSH</h1>
+			<p>To bind a function to a key press, you need to create a widget for it and map it with bindkey.</p>
+
+<p>In this example I will use Control e to execute ls -al, and print the current working directory.<br />You could use whatever function you wanted.</p>
+
+<p>In your custom directory in your oh-my-zsh setup (usually ~/.oh-my-zsh/custom/), create a script. I called this one list_widget.zsh.</p>
+
+<p>~/.oh-my-zsh/custom/list_widget.zsh</p>
+
+<p>create the file and add the following code to it. The echo is just to create a new line for reset prompt.</p>
+<pre>
+	ls_wrap () {
+		ls -al
+		echo
+
+		zle reset-prompt
+	}
+
+	zle -N ls_wrap
+
+	bindkey "^e" ls_wrap
+</pre>
+<p>Reload ZSH and by pressing Control e, it will execute pwd, and ls -al.</p>
+		<br />
+		<em style="color:#ccc">February  2, 2013</em>
+		</div>
+	</div>
+	<a href="/index.html">< back </a>
+</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27239148-1']);
+			_gaq.push(['_setDomainName', 'github.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+
+</script>
+	 </body>
+ </html>

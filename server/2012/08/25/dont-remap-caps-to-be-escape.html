@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Don't remap caps-lock to be escape - waisted real estate, for the fussy keyboard connoisseurs</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="sidenav">
+			<h1><a href="/">emileswarts.me</a></h1>
+			<p>Mastering unix</p>
+		</div>
+		<div id="wrap">
+			<div id="content">
+				<div class="container">
+					<div class="post">
+						<div class="postcontent">
+							<div class="post">
+	<div class="postcontent">
+		<div style="margin-top:80px">
+		<h1>Don't remap caps-lock to be escape - waisted real estate, for the fussy keyboard connoisseurs</h1>
+			<h2 id='tldr'>tl;dr</h2>
+
+<h2 id='escape_can_be_used_for_one_function_control_can_be_used_for_many'>Escape can be used for one function, control can be used for many.</h2>
+
+<p>I used to have caps lock mapped to escape.</p>
+
+<p>I switched to colemak a while ago, and have never looked back at the qwerty mess that I left behind. Trust me, qwerty was designed to be broken and this becomes clear when using a different keyboard layout.</p>
+
+<p>As far as operating systems go, I am a happy linux user but recently crossed paths with osx.</p>
+
+<p>Since there is no xmonad on osx, I decided to try tmux.</p>
+
+<p>When I first tried it though, I found the default modifier key combination to be rather awkward. Especially if you are on a macbook.</p>
+<img src='http://localhost:4000/images/macbook_air_keyboard.jpg' style='float:left;padding-right:20px' />
+<p>C-b as a default modifier is not easy to reach. I use vim and all of my most used applications have vi-like key bindings.</p>
+
+<p>Vim was designed for qwerty unfortunately, not colemak. I was not going to change the meaning of keys to try change this with something like colemak.vim.<br />I would rather burn the new keys into my fingers and keep it pure. And that is what I did. There was room for improvement however.</p>
+
+<p>In colemak, no key combination on the home row can really be used as an easy escape key as the combinations are used frequently in the English language.</p>
+
+<p>For instance in qwerty, a lot of people have something like this below mapped to esc in vim. &#8220;jk&#8221; or &#8220;jj&#8221;</p>
+
+<p>On Colemak the equivalent of &#8220;jk&#8221; would be &#8220;en&#8221;. Not a good idea because too many words contain this sequence in English. Same goes for most other home row combinations.</p>
+
+<p>For this reason, I had escape mapped to Caps-lock. This works great on the command line and you can just tap it to get back to normal mode, if you use vi mode (set -o vi). Same obviously goes for vim, and any other vi like applications. While this is still not as good as the qwerty &#8220;jk&#8221; it worked fine. (This is not a total loss, as the keys on the homerow are replaced with other ones such as n for next match under the right index finger)</p>
+
+<p>So the control key was never fully utilized or even remapped. It remained in its awkward position at the bottom of my keyboard.</p>
+
+<p>I realized that ctrl chording would not be as bad if it was placed on the caps lock key. I could just use the default &#8216;ctrl [&#8217; escape key which should be available as a default.</p>
+
+<p>Also considering that Esc has 1 function and ctrl can have copious amounts of combinations. It seems illogical to have it mapped the way I did.</p>
+
+<p>So I remapped the caps-lock key to be ctrl and, not escape. This worked great, and I found myself using the ctrl key more and more often. Things like control-x control-l for sentence completion, and control-n for word completion joined the list of some of my mostly used commands. Features that were once rarely used. Not to mention the other tons of control mappings in vim.</p>
+
+<p>Needless to say that Tmux also became much easier to manage. control-a j, control-a k etc. I worked with this layout for a few weeks and then even went a bit further by adding the &#8220;tn&#8221; insert mode escape sequence in vim. On colemak, t is on the left index finder and n is on the right index finger.</p>
+
+<p>I found tn to be a good shortcut, and rarely used in english. I also liked the feel of using both index fingers to escape to normal mode.</p>
+
+<p>Bottom line is that it is much more efficient to have caps remapped to control than it is to have it for escape.</p>
+		<br />
+		<em style="color:#ccc">August 25, 2012</em>
+		</div>
+	</div>
+	<a href="/index.html">< back </a>
+</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-27239148-1']);
+			_gaq.push(['_setDomainName', 'github.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+
+</script>
+	 </body>
+ </html>
