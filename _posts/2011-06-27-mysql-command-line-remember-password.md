@@ -1,12 +1,12 @@
 ---
 layout: post
 title: 'Mysql command line automatic login'
+description: When connecting to mysql on a few different hosts it can save you time, by saving your mysql details in a file that will be used for login.
 
 ---
 
 
-When connecting to mysql on a few different hosts it can save you time, by saving your mysql details 
-in a file that will be used for login.
+When connecting to mysql on a few different hosts it can save you time, by saving your mysql details in a file that will be used for login.
 
 Create a file like 
 <pre> vi ~/mysql_server1.txt </pre>

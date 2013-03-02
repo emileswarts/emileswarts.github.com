@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Vim word frequency'
+description: 'Check the frequency of a word'
 
 ---
 

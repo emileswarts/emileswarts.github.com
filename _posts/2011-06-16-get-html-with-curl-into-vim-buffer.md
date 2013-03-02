@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Get html with curl into vim buffer'
+description: get remote contents straight into a vim buffer with curl.
 
 ---
 

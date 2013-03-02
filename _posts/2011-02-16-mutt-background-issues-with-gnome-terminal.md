@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Mutt transparent background issues with gnome terminal'
+description: Here is how to solve it, and have a transparent background in Mutt. 
 
 ---
 

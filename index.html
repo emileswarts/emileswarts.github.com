@@ -3,16 +3,14 @@ layout: layout
 title: Emile Swarts
 ---
 
-<div class="content">
-	<div class="related">
-		<ul>
-			{% for post in site.posts %}
-			<li>
-			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-			{{ post.description }}
-			<span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
-			</li>
-			{% endfor %}
-		</ul>
+<!-- Example row of columns -->
+
+{% for post in site.posts %}
+<div class="row-fluid">
+	<div class="span12">
+		<a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+		<p>{{ post.description }}</p>
 	</div>
 </div>
+{% endfor %}
+<div style="clear:both"></div>

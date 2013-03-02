@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Basic github commands'
+description: Add github user details to an existing repository.
 
 ---
 

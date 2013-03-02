@@ -1,11 +1,12 @@
 ---
 layout: post
 title: 'Dbext VIM plugin - Execute mysql commands without leaving vim - cheatsheet'
+description: I recently found the Dbext plugin by Peter Bagyinszki, which eliminates the need for me to have to type out manual mysql queries on the command line and keeps you in vim. 
 
 ---
 
 
-I recently found the Dbext plugin by Peter Bagyinszki, which eliminates the need for me to have to type out manual mysql queries on the command line.
+I recently found the Dbext plugin by Peter Bagyinszki, which eliminates the need for me to have to type out manual mysql queries on the command line and keeps you in vim.
 It enables you to save a file with commonly used queries, and then run them with a simple shortcut.
 
 I will not go into depth about this plugin, and you can learn more about it by downloading it here:

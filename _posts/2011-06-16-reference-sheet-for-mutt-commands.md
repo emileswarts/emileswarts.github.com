@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'my most used mutt commands'
+description: Mutt is a great email client.  It is actually a very small program that outsources most of the work to programs that specialise in it.  I have logged some of my most used commands.
 
 ---
 

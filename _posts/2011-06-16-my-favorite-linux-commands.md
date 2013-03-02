@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Favorite linux  commands'
+description: Some linux commands that I use daily.
 
 ---
 

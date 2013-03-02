@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Don't remap caps-lock to be escape - waisted real estate, for the fussy keyboard connoisseurs"
+description:  I used to have caps lock mapped to escape.  
 
 ---
 
@@ -10,10 +11,9 @@ tl;dr
 Escape can be used for one function, control can be used for many.
 -------------------------------------------------------------------
 
-I used to have caps lock mapped to escape.  
+I used to have caps lock mapped to escape. 
 
-I switched to colemak a while ago, and have never looked back at the qwerty mess that I left behind.  Trust me, qwerty was designed to be broken and
-this becomes clear when using a different keyboard layout.
+I switched to colemak a while ago, and have never looked back at the qwerty mess that I left behind.  Trust me, qwerty was designed to be broken and this becomes clear when using a different keyboard layout.
 
 As far as operating systems go, I am a happy linux user but recently crossed paths with osx.
 

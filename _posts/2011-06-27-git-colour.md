@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Add git colours to your .gitconfig'
+description: Add colours to your git statements  
 
 ---
 

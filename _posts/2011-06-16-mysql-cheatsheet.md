@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Mysql cheatsheet'
+description: Some handy mysql commands.
 
 ---
 

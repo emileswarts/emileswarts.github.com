@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Fix html indentation with vim'
+description: Format html with vim. 
 
 ---
 

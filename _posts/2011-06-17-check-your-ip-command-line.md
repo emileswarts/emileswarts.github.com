@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Check your ip linux'
-
+description: Check your public IP with lynx  
 ---
 
 
