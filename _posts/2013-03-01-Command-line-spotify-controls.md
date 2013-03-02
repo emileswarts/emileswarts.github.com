@@ -4,7 +4,6 @@ title: Control Spotify from the command line
 description: This basic python script allows you to send instructions to spotify to skip tracks.
 
 ---
-
 <p>
 	I am often working on something, only to get distracted by a terrible track which was selected through related artists, or Spotify radio.  This does
 	not happen too often, but it does happen and I would like a quick way to skip the track without having to mess with the GUI.  I searched online for something that could do this but after half an hour I had still not found anything.  
