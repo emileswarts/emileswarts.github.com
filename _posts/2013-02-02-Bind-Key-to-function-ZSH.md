@@ -31,4 +31,4 @@ create the file and add the following code to it.  The echo is just to create a 
 </pre>
 
 
-Reload ZSH and by pressing Control e, it will execute pwd, and ls -al.
+Reload ZSH and by pressing Control e, it will execute ls -al.
