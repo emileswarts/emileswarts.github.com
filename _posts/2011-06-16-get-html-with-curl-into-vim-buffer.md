@@ -9,16 +9,14 @@ description: get remote contents straight into a vim buffer with curl.
 Get entire html page with curl and write it to a buffer in vim.
 This is useful for when you need to get data from a site and you dont want to reach all the way over to the mouse :)
 
- <pre>
-	 :r !curl http://rest/service --request POST --data @%
- </pre>
+```
+ :r !curl http://rest/service --request POST --data @%
+```
 
 Then strip out the tags
 -----------------------
 
- <pre>
-	 :%s/<[^>]*>//g
- </pre>
-
-magic
+```
+ :%s/<[^>]*>//g
+```
 

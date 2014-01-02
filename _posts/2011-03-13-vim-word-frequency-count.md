@@ -7,7 +7,7 @@ description: 'Check the frequency of a word'
 
 Put the following in your .vimrc
 
-<pre>
+```
 function! WordFrequency() range
   let all = split(join(getline(a:firstline, a:lastline)), '\A\+')
   let frequencies = {}
@@ -22,12 +22,12 @@ function! WordFrequency() range
   sort i
 endfunction
 command! -range=% WordFrequency &lt;line1&gt;,&lt;line2&gt;call WordFrequency()
-</pre>
+```
 
 
-Type 
-<pre>
-:WordFrequency 
-</pre>
+```
+:WordFrequency
+```
 
-for a summary of the words
+for a summary of the words.
+
