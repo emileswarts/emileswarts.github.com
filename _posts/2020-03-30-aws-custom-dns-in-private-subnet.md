@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Service Discovery of EC2 instances in a private subnet'
+title: 'Low tech Service Discovery of EC2 instances in a private subnet'
 description: Use Route53 to assign DNS names to your EC2 instances
 
 ---
