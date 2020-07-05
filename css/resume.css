@@ -190,3 +190,11 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
