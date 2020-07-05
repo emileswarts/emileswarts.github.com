@@ -38,17 +38,17 @@ title: Emile Swarts
       <div class="resume-content mr-auto">
           <h3 class="mb-0">Prison Technology Transformation Programme</h3>
           <div class="subheading mb-3">Ministry of Justice</div>
-          <p>To provide the first fully managed inhouse technology service with a choice of modern devices that makes a real difference to how HMPPS staff work. This new service will provide users with printing, collaborative tools, the latest securities, support and the ability to work from anywhere for an increasingly mobile workforce.</p>
+          <p>A multi million pound Ministry of Justice project to modernise the tech in the police force.<br />
+            Acting as a solutions architect, I helped plan, design and build CI / CD Pipelines for multiple vendors, build high traffic DNS and DHCP servers for the police force.
+            <br />
+            This involved writing technical proposals, subnitted to a Technical Design Authority. I worked closely with the Operational Security Team on a high volume protective monitoring solution. The platforms were mainly AWS with integrations with Azure.
+          </p>
 
-          <li><strong>Kubernetes</strong></li>
-          <li><strong>Docker</strong></li>
           <li><strong>AWS</strong></li>
           <li><strong>Azure</strong></li>
-          <li><strong>DNS / DHCP</strong></li>
-          <li><strong>Ruby</strong></li>
           <li><strong>Terraform</strong></li>
           <li><strong>ELK Stack</strong></li>
-          <li><strong>GovUK Frontend Toolkit</strong></li>
+          <li><strong>Networking</strong></li>
       </div>
       <div class="text-md-right">
       </div>
@@ -63,7 +63,11 @@ title: Emile Swarts
       <div class="resume-content mr-auto">
           <h3 class="mb-0">Criminal Justice Secure Exchange</h3>
           <div class="subheading mb-3">Ministry of Justice</div>
-          <p>The Bichard 7 application receives information about the outcomes of hearings from courts (via the Libra case management system) and adds this information to the Police National Computer (PNC)</p>
+          <p>
+            Produced a modernisation report for a legacy piece of critial national infrastructure for the Government.
+            Bichard7 is a 10 year old JavaEE application that sits between the police and the courts and translates messages between them.
+            On access to the codebase, we proceeded to deploy this application to AWS, basing our recommendations on code spikes.
+          </p>
 
           <ul>
               <li><strong>Docker</strong></li>
@@ -72,6 +76,7 @@ title: Emile Swarts
               <li><strong>IBM DB2 / MQ</strong></li>
               <li><strong>Fujitsu</strong></li>
               <li><strong>Terraform</strong></li>
+              <li><strong>Public Service Network</strong></li>
           </ul>
       </div>
       <div class="resume-date text-md-right">
@@ -82,13 +87,16 @@ title: Emile Swarts
       <div class="resume-content mr-auto">
           <h3 class="mb-0">Form Builder</h3>
           <div class="subheading mb-3">Ministry of Justice</div>
-          <p>Form Builder is a service that uses platform software to create digital services. It will allow developers and interaction/service designers to design, iterate and deploy digital services quickly and easily based on GOV.UK design patterns.</p>
+          <p>Form Builder is a service that uses platform software to create digital services. It will allow developers and interaction/service designers to design, iterate and deploy digital services quickly and easily based on GOV.UK design patterns.
+
+            We also worked on creating end to end tests for an existing codebase composed of microservices. Using containers and docker compose, we were able to stand up the entire stack and run tests on it, giving developers more confidence.
+          </p>
 
           <ul>
-              <li><strong>Docker</strong></li>
               <li><strong>AWS</strong></li>
+              <li><strong>Docker</strong></li>
               <li><strong>Kubernetes</strong></li>
-              <li><strong>NodeJS</strong></li>
+              <li><strong>Javascript</strong></li>
               <li><strong>Python</strong></li>
               <li><strong>JSON Schema</strong></li>
               <li><strong>Terraform</strong></li>
@@ -106,21 +114,18 @@ title: Emile Swarts
       <h3 class="mb-0">GovWifi</h3>
       <div class="subheading mb-3">Government Digital Services</div>
       <p>GovWifi is a single wifi login which can be simply and cheaply installed by government departments over their existing infrastructure.
-
-Anyone who registers with GovWifi will have access to wifi at any participating public sector location. It’s available to civil servants, consultants and visitors to government departments.</p>
+        My team was brought in to rewrite a highly succesful service into a language supported by Government Digital Services.
+        The entire multi-region service was gradually replaced while serving a high load of traffic, using a combination of continuous integration and sophisticated AWS architecture solutions. </p>
 
         <ul>
             <li><strong>Docker</strong></li>
             <li><strong>AWS</strong></li>
             <li><strong>Terraform</strong></li>
-            <li><strong>Kubernetes</strong></li>
-            <li><strong>Ruby Sinatra</strong></li>
             <li><strong>Ruby on Rails</strong></li>
-            <li><strong>Javascript</strong></li>
+            <li><strong>Concourse</strong></li>
             <li><strong>Jenkins</strong></li>
-            <li><strong>FreeRadius</strong></li>
-            <li><strong>Cisco</strong></li>
-            <li><strong>GovUK Frontend Toolkit</strong></li>
+            <li><strong>Ansible</strong></li>
+            <li><strong>Networking</strong></li>
         </ul>
     </div>
     <div class="resume-date text-md-right">
@@ -132,11 +137,13 @@ Anyone who registers with GovWifi will have access to wifi at any participating 
     <div class="resume-content mr-auto">
       <h3 class="mb-0">GDS Project dependencies</h3>
       <div class="subheading mb-3">Government Digital Services</div>
-      <p>We developed a system which compliments <a href="https://dependabot.com/">Dependabot</a> and helps teams ensure their project dependencies are always kept up to date.
-      This would include daily announcements across more than a hundred projects and a dashboard providing an overview of the status of these dependencies.</p>
+      <p>The Government Digital Services have a lot of software projects running simultaniously. Keeping track of dependency updates with Dependabot can become difficult to manage by various teams.
+        We created a solution with a combination of API calls and simple interface to bring all the projects dependency statistics into one view.
+      </p>
 
 
         <ul>
+        <li><strong>CloudFoundry</strong></li>
         <li><strong>Docker</strong></li>
         <li><strong>Github</strong></li>
         <li><strong>Ruby</strong></li>
@@ -153,74 +160,19 @@ Anyone who registers with GovWifi will have access to wifi at any participating 
     <div class="resume-content mr-auto">
       <h3 class="mb-0">AkzoNobel</h3>
       <div class="subheading mb-3">Dulux</div>
-      <p>Design and implementation of a global Ruby on Rails e-commerce platform for Dulux.  This included integrating with a large number of 3rd party services and pushing financial data into SAP. Leading customer showcases and prioritisation sessions.</p>
-
+      <p>Planning and build of a Global E-Commerce solution that integrates many APIs from other suppliers to sell Dulux paint all over the world.</p>
         <ul>
+            <li><strong>AWS</strong></li>
             <li><strong>Docker</strong></li>
             <li><strong>React</strong></li>
             <li><strong>Elixir</strong></li>
+            <li><strong>Ruby</strong></li>
             <li><strong>Solidus E-commerce</strong></li>
             <li><strong>Rackspace</strong></li>
         </ul>
     </div>
     <div class="resume-date text-md-right">
       <span class="text-primary">January 2017 - September 2017</span>
-    </div>
-  </div>
-
-  <div class="resume-item d-flex flex-column flex-md-row mb-5">
-    <div class="resume-content mr-auto">
-      <h3 class="mb-0">Carbon Disclosure Project</h3>
-      <div class="subheading mb-3">Not for profit charity</div>
-      <p>Implementation of Ruby on Rails platform for this NGO, collating and exposing environmental and emissions data in order to support territories in adopting greener practices.</p>
-
-        <ul>
-            <li><strong>Ruby</strong></li>
-            <li><strong>Javascript</strong></li>
-            <li><strong>Jenkins</strong></li>
-        </ul>
-    </div>
-    <div class="resume-date text-md-right">
-      <span class="text-primary">March 2016 - January 2017</span>
-    </div>
-  </div>
-
-  <div class="resume-item d-flex flex-column flex-md-row mb-5">
-    <div class="resume-content mr-auto">
-      <h3 class="mb-0">KJUS</h3>
-      <div class="subheading mb-3">KJUS</div>
-      <p>KJUS is a Swiss ski and active wear brand. They required a rewrite of a legacy ecommerce system into Ruby, this included both frontend and backend development.</p>
-
-        <ul>
-            <li><strong>PHP</strong></li>
-            <li><strong>Symfony</strong></li>
-            <li><strong>Drupal</strong></li>
-            <li><strong>Ruby on Rails</strong></li>
-            <li><strong>Salesforce</strong></li>
-        </ul>
-    </div>
-    <div class="resume-date text-md-right">
-      <span class="text-primary">January 2015 - March 2016</span>
-    </div>
-  </div>
-
-  <div class="resume-item d-flex flex-column flex-md-row mb-5">
-    <div class="resume-content mr-auto">
-      <h3 class="mb-0">On Running</h3>
-      <div class="subheading mb-3">On Running</div>
-      <p>On Running is an independent shoe company that is growing rapidly.  We were responsible for providing a global E-commerce experience in more than 20 countries.  The systems integrated with Salesforce and we helped them improve their system.</p>
-
-        <ul>
-            <li><strong>Ruby on Rails</strong></li>
-            <li><strong>Javascript</strong></li>
-            <li><strong>Salesforce</strong></li>
-            <li><strong>BeanStalk</strong></li>
-            <li><strong>Cloud Foundry</strong></li>
-            <li><strong>Mailchimp</strong></li>
-        </ul>
-    </div>
-    <div class="resume-date text-md-right">
-      <span class="text-primary">March 2013 - January 2015</span>
     </div>
   </div>
 </section>
